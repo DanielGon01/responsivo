@@ -1,0 +1,76 @@
+h1{
+    color: brown;
+    font-size: 100px;
+}
+#img img{
+    width: 50vw;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+/*aplicar a formataçao responsiva*
+atraves de medias queries 
+*/
+
+@media screen and  (max-width:696px){
+    h1{
+        color: aqua;
+        font-size: 20px;
+
+}
+    body{
+        background-color: blueviolet;
+    }
+    .row{
+        display: inline;
+
+
+    }
+    .column{
+        float: left;
+        width: 100%;
+
+    }
+
+    #img img{
+        display: none;
+    }
+
+}
+@media screen and (min-width:697px) and (max-width: 1024px){
+    
+    h1{
+        color: rgb(255, 0, 85);
+        font-size: 50px;
+
+}
+    body{
+        background-color: rgb(226, 141, 43);
+    }
+}
+@media screen and (min-width:1025px) and (max-width:8000px ){
+
+    h1{
+        color: rgb(0, 132, 255);
+        font-size: 50px;
+
+}
+    body{
+        background-color: rgb(43, 226, 186);
+    }
+
+}
+
+    
